@@ -7,7 +7,68 @@ body{
     background-color: rgb(255, 255, 255);
     padding: 20px;
 }
-.icon{
+.main{
+    height: 100vh;
+    width: 100%;
+    
+}
+.container{
+    position: relative;
+    background-color: aliceblue;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.knopka > button{
+    padding: 50px 0 ;
+    width: 400px;
+    font-size: 32px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-color: green;
+    color: darkgreen;
+    animation-name: btn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    animation-direction: alternate;
+    cursor: pointer;
+    animation-delay: 2s;
+    
+}
+.knopka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+@keyframes btn {
+    from{
+        font-size: 32px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border-color: green;
+        color: darkgreen;
+    }
+    to{
+        background-color: green;
+        color: green;
+        width: 160px;
+        border-radius: 60%;
+        border: none;
+        
+    }
+}
+.iconk{
+    color: white;
+    position: absolute;
+    left: 195px;
+    top: 60px;
+}
+/* .icon{
     color: red;
     font-size: 50px;
     animation-name: icon;
@@ -37,4 +98,4 @@ body{
 }
 .icon:hover{
     animation-play-state: paused;
-}
+} */
